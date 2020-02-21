@@ -2,7 +2,7 @@
   <div class="component">
     <h3>You may view the user details here</h3>
     <p>Details</p>
-    <p>User Name: {{ myName }}</p>
+    <p>User Name: {{ switchedName() }}</p>
   </div>
 </template>
 
@@ -10,7 +10,12 @@
 
 <script>
     export default {
-      props: ['myName']
+      props: ['myName'],
+      methods: {
+        switchedName(){
+          return this.myName.split("").reverse().join("");
+        }
+      }
     }
 </script>
 
