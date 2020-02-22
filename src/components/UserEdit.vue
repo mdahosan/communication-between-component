@@ -2,10 +2,20 @@
   <div class="component">
     <h3>You may edit the User here</h3>
     <p>Edit me!</p>
+    {{ userAge }}
+    <button @click="editAge">Edit</button>
   </div>
 </template>
 
 <script>
+  export default {
+    props: ['userAge'],
+    methods: {
+      editAge() {
+        this.userAge = 30;
+      }
+    }
+  }
 </script>
 
 <style scoped>

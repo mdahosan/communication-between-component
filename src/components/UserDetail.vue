@@ -2,6 +2,7 @@
   <div class="component">
     <h3>You may view the user details here</h3>
     <p>Details</p>
+    <p>{{ userAge }}</p>
     <p>User Name: {{ switchedName() }}</p>
     <button @click="resetName">Reset Name</button>
     <button @click="resetFn()">Reset Name</button>
@@ -15,6 +16,7 @@
       props: {
         myName: String,
         resetFn: Function,
+        userAge: Number
       },
       methods: {
         switchedName(){
