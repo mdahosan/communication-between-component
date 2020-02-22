@@ -4,6 +4,7 @@
     <p>Details</p>
     <p>User Name: {{ switchedName() }}</p>
     <button @click="resetName">Reset Name</button>
+    <button @click="resetFn()">Reset Name</button>
   </div>
 </template>
 
@@ -11,7 +12,10 @@
 
 <script>
     export default {
-      props: ['myName'],
+      props: {
+        myName: String,
+        resetFn: Function,
+      },
       methods: {
         switchedName(){
           return this.myName.split("").reverse().join("");
