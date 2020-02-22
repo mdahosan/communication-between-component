@@ -9,3 +9,4 @@ Props Validation
 Using Custom Events for Child  Parent Communication
 Communicating with Callback Functions
 Using an Event Bus for Communication
+Centralizing Code in an Event Bus
