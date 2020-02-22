@@ -12,6 +12,9 @@
 <!--props name is same as what we using on template. because behind the seen this will create the property-->
 
 <script>
+
+    import { eventBus } from "../main";
+
     export default {
       props: {
         myName: String,
@@ -26,6 +29,11 @@
           this.myName = 'Ahosan';
           this.$emit('nameWasChanged', this.myName);
         }
+      },
+      created(){
+        eventBus.$on('ageWasEdited', (age)=>{
+          this.userAge = age;
+        })
       }
     }
 </script>
