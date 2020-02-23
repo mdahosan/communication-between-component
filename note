@@ -10,3 +10,7 @@ Using Custom Events for Child  Parent Communication
 Communicating with Callback Functions
 Using an Event Bus for Communication
 Centralizing Code in an Event Bus
+
+http://vuejs.org/guide/components.html#Props
+http://vuejs.org/guide/components.html#Custom-Events
+http://vuejs.org/guide/components.html#Non-Parent-Child-Communication
